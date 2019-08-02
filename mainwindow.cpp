@@ -152,6 +152,7 @@ void MainWindow::makeAnswer(void)
                     }
                     else
                     {
+                        line.replace("'","\\'");
                         if(item == "INPUT") buff.append("'" + line + "'");
                         else buff.append(line);
                     }
